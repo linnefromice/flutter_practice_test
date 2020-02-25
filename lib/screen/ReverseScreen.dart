@@ -30,6 +30,9 @@ class _State extends State<ReverseScreen> {
             SizedBox(height: 10.0),
             if (_reversed != null) ...[
               Text(
+                "Answer is ... ",
+              ),
+              Text(
                 _reversed,
               ),
               SizedBox(height: 10.0),
