@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_practice_test/screen/ReverseScreen.dart';
 
 void main() => runApp(MyApp());
 
@@ -34,6 +35,27 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  Widget _buildDrawer(BuildContext context) {
+    return Drawer(
+      child: ListView(
+        children: <Widget>[
+          DrawerHeader(
+            child: Text('Menu'),
+          ),
+          ListTile(
+            title: Text('Reverse App'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => ReverseScreen())
+              );
+            },
+          )
+        ],
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -55,6 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
+      drawer: _buildDrawer(context),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
