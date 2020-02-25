@@ -19,4 +19,20 @@ void main() {
     await tester.pump();
     expect(find.text("olleH"), findsOneWidget);
   });
+  testWidgets("widget test 02 - Reverse string widget", (WidgetTester tester)
+  async {
+    await tester.pumpWidget(MaterialApp(
+        home: ReverseScreen()
+    )
+    );
+    var textField = find.byType(TextField);
+    expect(textField, findsOneWidget);
+    await tester.enterText(textField, '12345XYZ67890');
+    expect(find.text('12345XYZ67890'), findsOneWidget);
+    var button = find.text("Reverse");
+    expect(button, findsOneWidget);
+    await tester.tap(button);
+    await tester.pump();
+    expect(find.text("09876ZYX54321"), findsOneWidget);
+  });
 }
