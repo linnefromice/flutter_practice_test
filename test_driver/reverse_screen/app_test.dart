@@ -16,9 +16,9 @@ void main() {
     });
 
     test("reverse the string", () async {
-      // TODO: modify (can't proceed)
-      await driver.tap(find.byType("Drawer"));
-      await driver.tap(find.byType("ListTile"));
+      // TODO: modify main.dart
+      // await driver.tap(find.byType("Drawer"));
+      // await driver.tap(find.byType("ListTile"));
       await driver.tap(find.byType("TextField"));
       await driver.enterText("Hello");
       await driver.tap(find.text("Reverse"));
