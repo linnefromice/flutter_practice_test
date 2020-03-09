@@ -2,7 +2,16 @@
 
 A Flutter application for training test practice.
 
-## Getting Started
+- use library named by test / flutter_driver
+- exmaple of unit test / widget test / integration test
+
+## Reference
+
+- [Flutter Testing 1 - Unit Test](https://www.youtube.com/watch?v=eLMa2jgp_bw&list=PLUiueC0kTFqLvpFk_Zg55geh_TBTKnbnA)
+- [Flutter Testing 2 - Widget Test](https://www.youtube.com/watch?v=nuMqDNUb7f0)
+- [Flutter Testing 3 - Integration Testing](https://www.youtube.com/watch?v=Vfi0uyDWIuM)
+
+## Default - Getting Started
 
 This project is a starting point for a Flutter application.
 
